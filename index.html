@@ -504,6 +504,11 @@
     }
     .cert-card h4 { font-size: 0.95rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem; }
     .cert-card p { font-size: 0.85rem; color: rgba(255,255,255,0.45); line-height: 1.65; }
+    .svc-certs .cert-card { background: #fff; border: 1px solid var(--border); }
+    .svc-certs .cert-card:hover { background: #fff; border-color: var(--orange); box-shadow: 0 6px 24px rgba(240,122,39,0.08); }
+    .svc-certs .cert-card h4 { color: var(--navy); }
+    .svc-certs .cert-card p { color: var(--muted); }
+    #location { scroll-margin-top: 90px; }
 
     /* ── DISABILITY ── */
     .disability-feature {
@@ -669,8 +674,9 @@
         <li><a href="#about-section">회사소개</a></li>
         <li><a href="#disability">장애인표준사업장(연계고용)</a></li>
         <li><a href="#clients">주요실적</a></li>
-        <li><a href="#services">서비스</a></li>
+        <li><a href="#services">서비스·인증</a></li>
         <li><a href="#history">연혁</a></li>
+        <li><a href="#location">오시는 길</a></li>
         <li><a href="#contact" class="nav-cta">문의하기</a></li>
       </ul>
       <button class="nav-hamburger" id="hamburger" aria-label="메뉴">
@@ -682,8 +688,9 @@
     <a href="#about-section" onclick="closeMobile()">회사소개</a>
     <a href="#disability" onclick="closeMobile()">장애인표준사업장(연계고용)</a>
     <a href="#clients" onclick="closeMobile()">주요실적</a>
-    <a href="#services" onclick="closeMobile()">서비스</a>
+    <a href="#services" onclick="closeMobile()">서비스·인증</a>
     <a href="#history" onclick="closeMobile()">연혁</a>
+    <a href="#location" onclick="closeMobile()">오시는 길</a>
     <a href="#contact" onclick="closeMobile()">문의하기</a>
   </div>
 
@@ -942,6 +949,44 @@
             <div class="svc-tags"><span class="svc-tag">인력파견</span><span class="svc-tag">병동보조</span><span class="svc-tag">전문인력</span></div>
           </div>
         </div>
+        <div class="svc-certs">
+          <div class="reveal" style="margin-top:5rem">
+            <span class="eyebrow">Certifications</span>
+            <h2 class="section-title">공인된 신뢰,<br>검증된 역량</h2>
+          </div>
+          <div class="cert-grid">
+            <div class="cert-card reveal">
+              <div class="cert-icon"><i class="bi bi-award-fill"></i></div>
+              <h4>장애인표준사업장 인증</h4>
+              <p>한국장애인고용공단 이사장 인증</p>
+            </div>
+            <div class="cert-card reveal" style="transition-delay:0.1s">
+              <div class="cert-icon"><i class="bi bi-building-check"></i></div>
+              <h4>중소기업 확인서</h4>
+              <p>소기업(소상공인) 확인 — 중소벤처기업부 인증</p>
+            </div>
+            <div class="cert-card reveal" style="transition-delay:0.2s">
+              <div class="cert-icon"><i class="bi bi-clipboard2-check"></i></div>
+              <h4>직접생산확인증명서</h4>
+              <p>건물위생관리, 시설경비 직접생산 확인</p>
+            </div>
+            <div class="cert-card reveal" style="transition-delay:0.3s">
+              <div class="cert-icon"><i class="bi bi-file-earmark-check"></i></div>
+              <h4>건물위생관리업 신고</h4>
+              <p>구미시 건물위생관리업 정식 신고 완료</p>
+            </div>
+            <div class="cert-card reveal" style="transition-delay:0.35s">
+              <div class="cert-icon"><i class="bi bi-shield-lock"></i></div>
+              <h4>시설경비업 허가</h4>
+              <p>경상북도경찰청 시설경비업 허가</p>
+            </div>
+            <div class="cert-card reveal" style="transition-delay:0.4s">
+              <div class="cert-icon"><i class="bi bi-person-check"></i></div>
+              <h4>근로자파견업 허가</h4>
+              <p>대구지방고용노동청구미지청 파견사업 허가 취득</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -991,48 +1036,6 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CERTIFICATIONS -->
-    <section class="section cert-section">
-      <div class="wrap">
-        <div class="reveal">
-          <span class="eyebrow" style="color:var(--orange)">Certifications</span>
-          <h2 class="section-title" style="color:#fff">공인된 신뢰,<br>검증된 역량</h2>
-        </div>
-        <div class="cert-grid">
-          <div class="cert-card reveal">
-            <div class="cert-icon"><i class="bi bi-award-fill"></i></div>
-            <h4>장애인표준사업장 인증</h4>
-            <p>한국장애인고용공단 이사장 인증</p>
-          </div>
-          <div class="cert-card reveal" style="transition-delay:0.1s">
-            <div class="cert-icon"><i class="bi bi-building-check"></i></div>
-            <h4>중소기업 확인서</h4>
-            <p>소기업(소상공인) 확인 — 중소벤처기업부 인증</p>
-          </div>
-          <div class="cert-card reveal" style="transition-delay:0.2s">
-            <div class="cert-icon"><i class="bi bi-clipboard2-check"></i></div>
-            <h4>직접생산확인증명서</h4>
-            <p>건물위생관리, 시설경비 직접생산 확인</p>
-          </div>
-          <div class="cert-card reveal" style="transition-delay:0.3s">
-            <div class="cert-icon"><i class="bi bi-file-earmark-check"></i></div>
-            <h4>건물위생관리업 신고</h4>
-            <p>구미시 건물위생관리업 정식 신고 완료</p>
-          </div>
-          <div class="cert-card reveal" style="transition-delay:0.35s">
-            <div class="cert-icon"><i class="bi bi-shield-lock"></i></div>
-            <h4>시설경비업 허가</h4>
-            <p>경상북도경찰청 시설경비업 허가</p>
-          </div>
-          <div class="cert-card reveal" style="transition-delay:0.4s">
-            <div class="cert-icon"><i class="bi bi-person-check"></i></div>
-            <h4>근로자파견업 허가</h4>
-            <p>대구지방고용노동청구미지청 파견사업 허가 취득</p>
           </div>
         </div>
       </div>
@@ -1091,7 +1094,7 @@
               </div>
             </div>
           </div>
-          <div class="contact-map-wrap reveal-right">
+          <div class="contact-map-wrap reveal-right" id="location">
             <iframe
               src="https://maps.google.com/maps?q=36.1174040475543,128.349560524213&z=17&output=embed"
               allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
